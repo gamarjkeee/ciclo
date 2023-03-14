@@ -1614,13 +1614,13 @@ h6 {
 
   .page__section::after {
     top: 0;
-    right: 50%;
-    -webkit-transform: translate(50%, 50%);
-        -ms-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
+    right: 50% !important;
+    -webkit-transform: translate(50%, 50%) !important;
+        -ms-transform: translate(50%, 50%) !important;
+            transform: translate(50%, 50%) !important;
   }
 
-  .screen-01__container {
+  .screen-01__container.full {
     padding-top: 0rem;
     padding-bottom: 0rem;
     -webkit-box-align: stretch;
