@@ -1816,8 +1816,8 @@ h6 {
   }
 
   .screen-12__container {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
 
   .screen-12__body {
