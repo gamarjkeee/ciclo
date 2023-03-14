@@ -330,7 +330,7 @@ h6 {
   counter-reset: item;
 }
 
-.page__section:after {
+.page__section::after {
   counter-increment: item;
   content: counter(item, decimal-leading-zero);
   position: absolute;
@@ -348,6 +348,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .screen-01__body {
@@ -1003,14 +1008,6 @@ h6 {
 }
 
 @media (min-width: 47.99875em) {
-  .screen-01__container {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .screen-03__image-ibg img {
     position: absolute;
     top: 0;
@@ -1096,11 +1093,11 @@ h6 {
     font-size: 1.5625rem;
   }
 
-  .page__section:after {
+  .page__section::after {
     right: 7.5rem;
   }
 
-  .page__section:after {
+  .page__section::after {
     font-size: 3.75rem;
   }
 
@@ -1374,11 +1371,11 @@ h6 {
     font-size: 1.125rem;
   }
 
-  .page__section:after {
+  .page__section::after {
     right: 0.46875rem;
   }
 
-  .page__section:after {
+  .page__section::after {
     font-size: 1.875rem;
   }
 
@@ -1559,7 +1556,7 @@ h6 {
   }
 
   .screen-12__value {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
 
   .screen-12__name {
@@ -1615,7 +1612,7 @@ h6 {
             flex: 0 0 1.25rem;
   }
 
-  .page__section:after {
+  .page__section::after {
     top: 0;
     right: 50%;
     -webkit-transform: translate(50%, 50%);
@@ -1624,6 +1621,11 @@ h6 {
   }
 
   .screen-01__container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -1964,25 +1966,25 @@ h6 {
 }
 
 @supports (right: clamp( 0.46875rem , -0.9375rem  +  7.03125vw , 7.5rem )) {
-    .page__section:after {
+    .page__section::after {
       right: clamp( 0.46875rem , -0.9375rem  +  7.03125vw , 7.5rem );
     }
 }
 
 @supports not (right: clamp( 0.46875rem , -0.9375rem  +  7.03125vw , 7.5rem )) {
-    .page__section:after {
+    .page__section::after {
       right: calc(0.46875rem + 7.03125 * (100vw - 20rem) / 100);
     }
 }
 
 @supports (font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem )) {
-    .page__section:after {
+    .page__section::after {
       font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem );
     }
 }
 
 @supports not (font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem )) {
-    .page__section:after {
+    .page__section::after {
       font-size: calc(1.875rem + 1.875 * (100vw - 20rem) / 100);
     }
 }
@@ -2515,15 +2517,15 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 2.25rem , 1.95rem  +  1.5vw , 3.75rem )) {
+@supports (font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem )) {
     .screen-12__value {
-      font-size: clamp( 2.25rem , 1.95rem  +  1.5vw , 3.75rem );
+      font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem );
     }
 }
 
-@supports not (font-size: clamp( 2.25rem , 1.95rem  +  1.5vw , 3.75rem )) {
+@supports not (font-size: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem )) {
     .screen-12__value {
-      font-size: calc(2.25rem + 1.5 * (100vw - 20rem) / 100);
+      font-size: calc(1.875rem + 1.875 * (100vw - 20rem) / 100);
     }
 }
 
